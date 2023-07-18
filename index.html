@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name=”robots” content=”noindex, nofollow”>
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" href="android-chrome-256x256.png">
@@ -12,42 +11,43 @@
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-  <!-- reset.css destyle -->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
-/>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/destyle.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>スマイル・ジュニア英会話教室</title>
 </head>
 <body>
-  <div class="hero">
+  <header id="header" class="header">
     <h1 class="logo"><a href="."><img src="logo.svg" alt="ロゴ"></a></h1>
+    <nav class="g-nav">
+      <ul class="g-nav__list">
+        <li class="g-nav__item"><a href="#info">教室案内</a></li>
+        <li class="g-nav__item"><a href="#lesson">授業内容</a></li>
+        <li class="g-nav__item"><a href="#price-plan">料金・プラン</a></li>
+        <li class="g-nav__item"><a href="#faq">よくあるご質問</a></li>
+        <li class="g-nav__item"><a href="#form">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <nav id="h-nav" class="h-nav">
+      <ul class="h-nav__list">
+        <li class="h-nav__item"><a href="#info">教室案内</a></li>
+        <li class="h-nav__item"><a href="#lesson">授業内容</a></li>
+        <li class="h-nav__item"><a href="#price-plan">料金・プラン</a></li>
+        <li class="h-nav__item"><a href="#faq">よくあるご質問</a></li>
+        <li class="h-nav__item"><a href="#form">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <div class="openbtn">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+  <div class="hero">
     <div class="hero__inner">
-        <div class="hero__heading">
-          <h2 class="hero__title">let's enjoy<br>english</h2>
-          <div class="hero__link">
-            <a href="#" class="btn hero__btn">まずは資料請求</a>
-          </div>
-        </div>
-        <div class="hero__img">
-        </div>
+      <div class="hero__link">
+        <a href="#" class="btn hero__btn">まずは資料請求</a>
+      </div>
     </div>
   </div>
-  <header id="header" class="header">
-      <nav class="g-nav">
-        <ul class="g-nav__list">
-          <li class="g-nav__item"><a href="#info">教室案内</a></li>
-          <li class="g-nav__item"><a href="#lesson">授業内容</a></li>
-          <li class="g-nav__item"><a href="#price-plan">料金・プラン</a></li>
-          <li class="g-nav__item"><a href="#faq">よくあるご質問</a></li>
-          <li class="g-nav__item"><a href="#form">お問い合わせ</a></li>
-        </ul>
-      </nav>
-      <div class="openbtn">
-        <span></span><span></span><span></span>
-      </div>
-  </header>
+  <hr>
   <main class="contents">
     <section id="news" class="news section">
       <div class="inner">
@@ -78,7 +78,7 @@
                   <span class="tag">ブログ</span>
                 </div>
                 <div class="article__body">
-                  <h4 class="article__title">教室で育てているパセリが栽培の時期になりました</h4>
+                  <h4 class="article__title">教室で育てているトマトが栽培の時期になりました</h4>
                   <p class="article__text">今年は豊作でしたので保護者の方にもお裾分け致します。<br>ご自由にお持ち帰りください。</p>
                 </div>
               </div>
@@ -106,12 +106,11 @@
                 <div class="swiper-button-next" style="color: #FFEF00;"></div>
               </div>
               <div class="info-classroom__body">
-                <p>夫婦共にフロリダ州出身。
-                  大学生の時に留学のために来日。
-                  その時から移住を決断し、1０年前より日本に居住。
-                  夫婦で公立小学校・中学校の「外国語教員(ALT)」として勤務。
-                  2015年4月から自宅を解放しての英会話教室をアリシアが開催。
-                  18年10月より、夫婦で「小学生専門」英会話教室を本格的に開始します。</p>
+                <h4>挨拶</h4>
+                <p>夫婦で公立小学校・中学校の「外国語教員(ALT)」として勤務を経て2015年4月から自宅を解放しての英会話教室をアリシアが開催。<br>18年10月より、夫婦で「小学生専門」英会話教室を本格的に開始します。</p>
+                <h4>学習内容</h4>
+                <p>教材は、これまでの英会話教室開催の経験を生かした「オリジナル教材」に加えて、個別指導の教材もご準備いたします</p>
+                <p>※その他、詳細は資料をご請求下さい</p>
               </div>
             </div>
           </div>
@@ -132,8 +131,8 @@
           </div>
           <div class="info-access">
             <h3 class="section__title underline">アクセス</h3>
-            <p>徳島県徳島市英語町1289</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7379.394223438012!2d134.5802340594273!3d34.03902916590452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35536d32c07a5087%3A0xf4a0c1b22e1f2a2!2zQ2FzYSBBbGJlcm8gZGkgUGlubyBBLCDvvJXkuIHnm64t77ySIOa0peeUsOacrOeUuiDlvrPls7bluIIg5b6z5bO255yMIDc3MC04MDAz!5e0!3m2!1sja!2sjp!4v1689499917060!5m2!1sja!2sjp" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>住所：徳島県徳島市英語町1289</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7379.394223438012!2d134.5802340594273!3d34.03902916590452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35536d32c07a5087%3A0xf4a0c1b22e1f2a2!2zQ2FzYSBBbGJlcm8gZGkgUGlubyBBLCDvvJXkuIHnm64t77ySIOa0peeUsOacrOeUuiDlvrPls7bluIIg5b6z5bO255yMIDc3MC04MDAz!5e0!3m2!1sja!2sjp!4v1689499917060!5m2!1sja!2sjp" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" clareferrerpolicy="no-referrer-when-downgrade" class="maps"></iframe>
           </div>
         </div>
       </div>
@@ -201,15 +200,15 @@
                 <table class="table">
                   <tr>
                     <th>月謝</th>
-                    <td>6,480円</td>
+                    <td>7,560円</td>
                   </tr>
                   <tr>
                     <th>入学金</th>
-                    <td>5,400円</td>
+                    <td>6,480円</td>
                   </tr>
                   <tr>
                     <th>教材費</th>
-                    <td>21,600円</td>
+                    <td>27,000円</td>
                   </tr>
                 </table>
                 <p>授業時間:週1回60分程度</p>
@@ -241,7 +240,7 @@
               </li>
               <li>
                 <span class="schedule-week">金</span>
-                <p>特別授業</p>
+                <p>特別授業<span class="detail">※参加費用が別途２,000円必要です</span></p>
               </li>
               <li>
                 <span class="schedule-week">土</span>
@@ -286,24 +285,40 @@
               <p class="voice__body">教材もレッスンも先生も大好き<br>無料体験レッスンに参加した時から、子ども自身が「通いたい」と言ったのではじめました。<br>レッスンはゲームなどを取り入れた楽しそうな内容。<br>先生もやさしく元気いっぱいなので、子どもは大好きです。</p>
             </div>
             <div class="voice__item">
-              <div class="voice__heading">ココミさん(小学3年生)<br>の保護者より</div>
-              <p class="voice__body">教材もレッスンも先生も大好き<br>無料体験レッスンに参加した時から、子ども自身が「通いたい」と言ったのではじめました。<br>レッスンはゲームなどを取り入れた楽しそうな内容。<br>先生もやさしく元気いっぱいなので、子どもは大好きです。</p>
+              <div class="voice__heading">ユイカさん（小学3年生）<br>の保護者より</div>
+              <p class="voice__body">教えたことのないローマ字が読めるように
+                教室は子どもが一人で通える距離にあるので安心です。<br>
+                一人ひとり熱心に教えてくださる先生に恵まれ、楽しく通っています。<br>
+                教えたことのないローマ字が読めるようになったこと、発音がよくなったことに驚いています。</p>
             </div>
             <div class="voice__item">
-              <div class="voice__heading">ココミさん(小学3年生)<br>の保護者より</div>
-              <p class="voice__body">教材もレッスンも先生も大好き<br>無料体験レッスンに参加した時から、子ども自身が「通いたい」と言ったのではじめました。<br>レッスンはゲームなどを取り入れた楽しそうな内容。<br>先生もやさしく元気いっぱいなので、子どもは大好きです。</p>
+              <div class="voice__heading">ミキさん（小学１年生）<br>の保護者より</div>
+              <p class="voice__body">英語が大好きになったのは先生のおかげ
+                先生はとても親しみやすい方で、人見知りの娘がすぐに馴染みました。<br>
+                毎回嫌がらずに楽しんでレッスンに通っているのは、驚きです。
+                レッスン内容は、私が知っている英語教育との違いに驚かされます。<br>
+                そのせいなのか、発音もさることながらヒアリング力がすごい。</p>
             </div>
             <div class="voice__item">
-              <div class="voice__heading">ココミさん(小学3年生)<br>の保護者より</div>
-              <p class="voice__body">教材もレッスンも先生も大好き<br>無料体験レッスンに参加した時から、子ども自身が「通いたい」と言ったのではじめました。<br>レッスンはゲームなどを取り入れた楽しそうな内容。<br>先生もやさしく元気いっぱいなので、子どもは大好きです。</p>
+              <div class="voice__heading">きららさん（小学5年生）<br>の保護者より</div>
+              <p class="voice__body">ずっと続けたいと思える楽しいレッスン
+                無料体験授業では、私もレッスンを見学して安心しました。<br>
+                英会話だけでなく、あいさつや日常の態度についても学ぶことができています。<br>
+                本人は「楽しい。英語がわかるようになってうれしい！」と大満足。</p>
             </div>
             <div class="voice__item">
-              <div class="voice__heading">ココミさん(小学3年生)<br>の保護者より</div>
-              <p class="voice__body">教材もレッスンも先生も大好き<br>無料体験レッスンに参加した時から、子ども自身が「通いたい」と言ったのではじめました。<br>レッスンはゲームなどを取り入れた楽しそうな内容。<br>先生もやさしく元気いっぱいなので、子どもは大好きです。</p>
+              <div class="voice__heading">リョウタくん（小学６年生）<br>の保護者より</div>
+              <p class="voice__body">子どもにとって理解しやすい教材<br>
+                教材は子どもにとって理解しやすい内容なので、本人も喜んで通っています。<br>
+                楽しい教え方をしてくださる先生の事も大好きなようで、安心して通わせています。<br>
+                最近は、私に英語や単語を話してくれるようになりました。</p>
             </div>
             <div class="voice__item">
-              <div class="voice__heading">ココミさん(小学3年生)<br>の保護者より</div>
-              <p class="voice__body">教材もレッスンも先生も大好き<br>無料体験レッスンに参加した時から、子ども自身が「通いたい」と言ったのではじめました。<br>レッスンはゲームなどを取り入れた楽しそうな内容。<br>先生もやさしく元気いっぱいなので、子どもは大好きです。</p>
+              <div class="voice__heading">ショウタくん（小学５年生）<br>の保護者より</div>
+              <p class="voice__body">学んだことを家で妹たちにレクチャー
+                家から教室が近かったことで選びました。<br>
+                先生はやさしいくレッスンはわかりやすいく、さらに友達に会うのも楽しんで通っています。<br>
+                レッスン内容を家で妹たちに教えている姿を見て、嬉しく感じています。</p>
             </div>
           </div>
         </div>
@@ -367,6 +382,6 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
