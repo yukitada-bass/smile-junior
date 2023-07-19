@@ -114,6 +114,11 @@ img {
   }
 }
 
+.maps {
+  width: 100%;
+  height: 300px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
