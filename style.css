@@ -135,6 +135,7 @@ img {
 }
 
 .h-nav {
+  display: none;
   position: fixed;
   opacity: 0;
   z-index: -1;
@@ -163,6 +164,7 @@ img {
 }
 
 .panelactive {
+  display: block;
   opacity: 1;
   z-index: 999;
 }
